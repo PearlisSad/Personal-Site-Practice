@@ -1,21 +1,17 @@
-FROM ubuntu:16.04
+FROM python:3.10-slim
 
-RUN apt-get update \
-    && apt-get install -yq --no-install-recommends \
-    python3 \
-    python3-pip
-RUN pip3 install --upgrade pip==9.0.3 \
-    && pip3 install setuptools
+# Prevent Python from buffering stdout/stderr (better logs in Docker)
+ENV PYTHONUNBUFFERED=1
 
-# for flask web server
-EXPOSE 5000
-
-# set working directory
-ADD . /app
 WORKDIR /app
 
-# install required libraries
-RUN pip3 install -r requirements.txt
+# Install dependencies first (better caching)
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-# This is the runtime command for the container
-CMD python3 app.py
+# Copy application code
+COPY . .
+
+EXPOSE 5000
+
+CMD ["python", "app.py"]

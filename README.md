@@ -1,4 +1,4 @@
-# Flask-React Docker Template
+ve# Flask-React Docker Template
 
 This project is a web app built with Python backend and ReactJS frontend to be used as a starter template.
 
@@ -31,12 +31,12 @@ To run the project locally follow the following steps:
 
 ## Backend
 
-Flask for the backend API (default port `5000`)
+Flask for the backend API (http://localhost:3000)
 For more information see the README.md file in the backend directory
 
 ## Frontend
 
-React for the frontend (default port `3000`)
+React for the frontend http://localhost:5000)
 For more information see the README.md file in the frontend directory
 
 ## License
