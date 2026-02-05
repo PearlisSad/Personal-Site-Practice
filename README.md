@@ -1,6 +1,13 @@
-ve# Flask-React Docker Template
+# Personal Web Project
 
-This project is a web app built with Python backend and ReactJS frontend to be used as a starter template.
+This project is forked from a React + Flask [template](https://github.com/caseyr003/flask-react-template).
+
+## Project Plans:
+- Make a portfolio page
+    - List projects taken
+- Make a web game only using React + Flask
+    - Card game of some sort?
+
 
 ## Built With
 
@@ -8,6 +15,9 @@ This project is a web app built with Python backend and ReactJS frontend to be u
 * [Flask](http://flask.pocoo.org/)
 * [React](https://reactjs.org/)
 * [Docker](https://www.docker.com/)
+
+### Tools to learn
+- Tailwind(CSS framework)
 
 ## Prerequisites
 
@@ -37,7 +47,13 @@ For more information see the README.md file in the backend directory
 ## Frontend
 
 React for the frontend http://localhost:5000)
-For more information see the README.md file in the frontend directory
+For more information see the README.md file in the frontend directory.
+
+https://www.contentful.com/blog/react-app-tailwind-css/
+
+
+For testing:
+`$env:NODE_OPTIONS="--openssl-legacy-provider"`
 
 ## License
 
