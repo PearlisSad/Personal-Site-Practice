@@ -8,7 +8,7 @@ function Navbar(){
         <nav class="bg-white shadow dark:bg-gray-800">
             <div class="container flex items-center justify-start p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
                 <a><Profile></Profile></a>
-                <a href="#" className = {page} >home</a>
+                <a href="#" className = {current_page} >home</a>
                 <a href="#" className = {page} >features</a>
                 <a href="#" className = {page} >pricing</a>
                 <a href="#" className = {page} >blog</a>
