@@ -4,6 +4,7 @@ import Navbar from './component/Navbar'
 import Home from './pages/Home'
 import Sidebar from './component/Sidebar'
 import Header from './component/Header'
+import Slots from './component/Slots'
 
 function App() {
   return (
